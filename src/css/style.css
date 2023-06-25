@@ -1,0 +1,207 @@
+/*  */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(/images/bg-mobile.png);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.one,
+.two {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    padding: 1.5rem;
+    background-color: hsl(228, 56%, 26%);
+    margin: 0.5rem;
+}
+
+.one {
+    border-radius: 1rem 6rem 1rem 1rem;
+}
+
+.two {
+    border-radius: 1rem;
+    position: relative;
+}
+
+.logo {
+    width: 80%;
+    padding-bottom: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    width: 20%;
+    background-color: hsl(229, 57%, 11%);
+    padding: 0.8rem;
+    margin: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.folder {
+    padding: 1rem 0.8rem;
+}
+
+.upload {
+    padding: 1.2rem 0.8rem;
+}
+
+p {
+    color: hsl(243, 100%, 93%);
+    padding-bottom: 1rem;
+}
+
+.size-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 1rem;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    text-align: center;
+}
+
+.color-bar {
+    width: 81.5%;
+    height: 15px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 1rem;
+    margin-top: 0.18rem;
+    margin-left: 0.1rem;
+    display: flex;
+    justify-content: right;
+}
+
+.boll {
+    width: 10%;
+    height: 15px;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 50%;
+}
+
+.sizes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+
+.gb {
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+}
+
+.three {
+    background-color: hsl(243, 100%, 93%);
+    width: 35%;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 6rem;
+    left: 10.3rem;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 200%;
+    padding-right: 0.5rem;
+}
+
+.left {
+    color: hsl(229, 7%, 55%);
+}
+
+@media (min-width: 768px) {
+
+    body {
+        background-image: url(/images/bg-desktop.png);
+        background-position: -2rem 19rem;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-color: hsl(229, 57%, 11%);
+    }
+
+    main {
+        flex-direction: row;
+        width: 60%;
+    }
+
+    .one {
+        width: 200%;
+        height: 80%;
+    }
+
+    .logo {
+        width: 50%;
+        padding-bottom: 0.5rem;
+    }
+
+    .icons {
+        width: 80%;
+    }
+
+    .two {
+        margin-top: 2.5rem;
+        width: 250%;
+        height: 65%;
+    }
+
+    .boll {
+        width: 5%;
+    }
+
+    .three {
+        left: 53rem;
+        width: 15%;
+        bottom: 23.5rem;
+        border-radius: 0.5rem 0.5rem 0 0.5rem;
+    }
+
+    .triangulo {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 25px solid hsl(243, 100%, 93%);
+        position: absolute;
+        bottom: -1.4rem;
+        right: 0rem;
+
+    }
+}
